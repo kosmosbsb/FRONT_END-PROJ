@@ -252,7 +252,6 @@
 								<button type="button" id="cnvDescBtn_7" class="btn_xsmall" _popup="convenience" _title="콘센트" _result_target="cnvDesc_7">입력</button>
 							</td>
 						</tr>
-						<c
 						
 						
 						
@@ -316,7 +315,6 @@
 								<button type="button" id="cnvDescBtn_24" class="btn_xsmall" _popup="convenience" _title="인터넷/WIFI" _result_target="cnvDesc_24">입력</button>
 							</td>
 						</tr>
-						<c
 						
 						
 						
