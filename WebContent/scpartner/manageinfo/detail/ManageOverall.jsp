@@ -221,7 +221,7 @@
 			<ul class="register_box">
 				<li class="register_menu">
 					
-					<a href="/wsmod/step2?h=dkelrk1&spaceId=12228" class="menu_link completed">
+					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/BasicInfo.jsp" class="menu_link completed"><!-- 원본 href : /wsmod/step2?h=dkelrk1&spaceId=12228 -->
 						<strong class="title">기본 정보</strong>
 						<p class="desc">공간에 대한 기본 정보를 입력하세요.</p>
 						
@@ -231,7 +231,7 @@
 					</a>
 				</li>
 				<li class="register_menu">
-					<a href="/wsmod/step3?h=dkelrk1&spaceId=12228" class="menu_link completed">
+					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/ContactInfo.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step3?h=dkelrk1&spaceId=12228 -->
 						<strong class="title">연락처 정보</strong>
 						<p class="desc">문의 및 알림을 받을 연락처를 입력하세요.</p>
 						
@@ -240,7 +240,7 @@
 					</a>
 				</li>
 				<li class="register_menu">
-					<a href="/wsmod/step4?h=dkelrk1&spaceId=12228" class="menu_link completed">
+					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/Convinience.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step4?h=dkelrk1&spaceId=12228 -->
 						<strong class="title">이용 안내</strong>
 						<p class="desc">운영시간 및 주의사항을 입력하세요.</p>
 						
@@ -249,7 +249,7 @@
 					</a>
 				</li>
 				<li class="register_menu">
-					<a href="/wsmod/step5?h=dkelrk1&spaceId=12228" class="menu_link completed">
+					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/Fee.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step5?h=dkelrk1&spaceId=12228 -->
 						<strong class="title">편의 시설</strong>
 						<p class="desc">제공할 수 있는 편의시설과 서비스를 입력하세요.</p>
 						
@@ -258,7 +258,7 @@
 					</a>
 				</li>
 				<li class="register_menu">
-					<a href="/wsmod/step6?h=dkelrk1&spaceId=12228" class="menu_link completed">
+					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/ServiceTime.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step6?h=dkelrk1&spaceId=12228 -->
 						<strong class="title">가격 정보</strong>
 						<p class="desc">가격 정책과 환불 기준을 입력하세요.</p>
 						
@@ -267,7 +267,7 @@
 					</a>
 				</li>
 				<li class="register_menu">
-					<a href="/wsmod/step7?h=dkelrk1&spaceId=12228" class="menu_link completed">
+					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/Transaction.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step7?h=dkelrk1&spaceId=12228 -->
 						<strong class="title">정산 정보</strong>
 						<p class="desc">사업자정보와 계좌정보를 입력하세요.</p>
 						
@@ -280,7 +280,7 @@
 		</form>
 		<!-- [D] 미리보기 또는 검수신청을 할 수 없는 상태 -->
 		<div class="fixed_bar full_fixed">
-			<span class="btn_wrap"><a href="javascript:void(0);" class="fix_btn_prev disabled">미리보기</a></span>
+			<span class="btn_wrap"><a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/Preview.jsp" class="fix_btn_prev disabled">미리보기</a></span>
 			<span class="btn_wrap"><a href="javascript:void(0);" class="fix_btn_next inspection disabled">검수신청</a></span>
 		</div>
 	</div>

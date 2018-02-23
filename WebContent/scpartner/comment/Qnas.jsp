@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
+
+
+
+
 <html lang="ko">
 
 <head>
@@ -46,7 +50,7 @@
 <!-- wrap -->
 <div class="wrap">
 	<header class="header">
-		<div class="page_title"><h2>이용 후기 관리</h2></div>
+		<div class="page_title"><h2>Q&amp;A 관리</h2></div>
 		<a href="javascript:void(0);" class="nav_prev">
 			<span class="sp_icon ico_prev">이전</span>
 		</a>
@@ -184,37 +188,18 @@
 		<div class="reservation_list">
 			<div class="review_tab">
 				<ul class="tab_search divide2">
-					<li class="active"><a href="javascript:void(0);">이용후기</a></li>
-					<li><a href="Qnas.jsp">Q&amp;A</a></li>
+					<li><a href="Review.jsp">이용후기</a></li>
+					<li class="active"><a href="javascript:void(0);">Q&amp;A</a></li>
 				</ul>
 			</div>
 			
-			<div class="box_search">
-				<div class="box_inner">
-					<div class="one_search">
-						<div class="flex_wrap">
-							<div class="flex_box">
-								<div class="flex">예약 정보 검색</div>
-								<div class="flex">
-									<div class="input">
-										<input type="text" name="keyword" id="" placeholder="예약번호 또는 예약자명" value="" data-ui-sync-param="reviewList" data-ui-enter-click="#search_reserve">
-									</div>
-								</div>
-								<div class="flex">
-									<a href="javascript:void(0)" id="search_reserve" class="btn btn_default" data-ui-param-link="reviewList"><i class="sp_icon ico_search_primary"></i><i class="sp_icon ico_btn_search"></i>검색</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="filter_area">
 					<div class="inner_width">
 						<!-- [D] label 클릭 시 sorting_filter에 on클래스를 추가해주세요. (아이콘)-->
 						<div class="sorting_filter">
 							<!-- [D] 선택된 option의 텍스트를 label에 넣어주세요 -->
 							<label for="sorting">전체상태</label>
-							<select name="replyYN" id="sorting" data-ui-param-link="reviewList" data-ui-sync-label>
+							<select name="replyYN" id="sorting" data-ui-param-link="qnaList" data-ui-sync-label>
 								<option value="all" selected>전체상태</option>
 								<option value="y" >답글있음</option>
 								<option value="n" >답글없음</option>
@@ -226,30 +211,98 @@
 		<div class="flex_wrap column3 fluid product_list">
 		
 		
-			<!-- 리스트 없을시 노출 -->
-			<article class="no_data">
-				<p>이용후기가 없습니다.</p>
+		
+		
+			<article class="box_manage review_manage">
+				<div class="inner qna_inner">
+					<dl class="info">
+						<dt class="tit">티엔티</dt>
+						
+						
+						
+							
+						
+							
+							<dd class="text">반려동물을 못데려오는게 아쉬웠음.</dd>
+							
+						
+						
+						<dd class="footnote">
+							<strong>수련의 공간</strong>
+							<span>2018.02.23 12:08:05</span> 
+						</dd>
+					</dl>
+					
+					
+					
+					
+					
+					
+					
+						
+						
+					<div class="comment" id="_printarea_qna_441">
+						<div class="heading">
+							<h3><label for="reply_441">호스트님의 답글</label></h3>
+						</div>
+						<div class="box_form">
+							<p class="comment_text">
+								그건 아직 불법이여서 안됨.
+							</p>
+						</div>
+						<div class="btn_area">
+							<a href="javascript:void(0)" class="btn btn_del _toggleQnaDeletePopup" data-cment-id="299" data-qna-id="441">삭제</a>
+							<a href="javascript:void(0)" class="btn btn_add _toggleQnaModifyArea" data-qna-id="441">수정</a>
+						</div>
+					</div>
+					
+					
+					<div class="comment" id="_modifyarea_qna_441" style="display:none;"> 
+						<div class="heading">
+							<h3><label for="reply_441">호스트님의 답글</label></h3>
+							<span class="option">
+								<span class="txt_count">
+									<em id="reply_cnt_441">0</em>자/<em>200</em>자
+									<span>(최소 15자)</span>
+								</span>
+							</span>
+						</div>
+						<div class="box_form">
+							<div class="input">
+								
+								<textarea name="" id="reply_441" minlength="15" maxlength="200" data-ui-sync-length="#reply_cnt_441" placeholder="게스트님의 질문에 답글을 작성해주세요.">그건 아직 불법이여서 안됨.</textarea>
+							</div>
+						</div>
+						<div class="btn_area">
+							<a href="javascript:void(0)" class="btn btn_add one_type _replyQna" data-cment-id="299" data-qna-id="441">수정</a>
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
 			</article>
-			<!-- //리스트 없을시 노출 -->
 		
 		
-		
+			
 		</div>
-		
 	</section>
 </div>
 <!-- layer popup  : top: 50%적용위해 margin-top직접입력함 -->
-<div class="layer_popup _popup1" id="_deleteReviewReplyLayer" style="display:none;" data-reserve-id data-cment-id>
+<div class="layer_popup _popup1" id="_deleteQnaReplyLayer" style="display:none;" data-qna-id data-cment-id>
 	<div class="popup_wrap">
-		<div class="pop_header">이용후기삭제</div>
+		<div class="pop_header">Q&amp;A 답변 삭제</div>
 		<div class="pop_container">
-			<p class="pop_txt">이용후기 삭제시 복구<br>또는 재등록이 불가합니다.</p>
+			<p class="pop_txt">답변 삭제시 복구<br>또는 재등록이 불가합니다.</p>
 			<div class="btns">
-				<a href="javascript:void(0)" class="btn btn_full btn_negative" _popcls="_deleteReviewReplyLayer">취소</a>
-				<a href="javascript:void(0)" class="btn btn_full btn_default" id="_deleteReviewReply">삭제</a>
+				<a href="javascript:void(0)" class="btn btn_full btn_negative" _popcls="_deleteQnaReplyLayer">취소</a>
+				<a href="javascript:void(0)" class="btn btn_full btn_default" id="_deleteQnaReply">삭제</a>
 			</div>
 		</div>
-		<a href="javascript:void(0)" _popcls="_deleteReviewReplyLayer" class="btn_pop_close" title="레이어팝업 닫힘"><i class="sp_icon ico_pop_close">레이어팝업닫기</i></a>
+		<a href="javascript:void(0)" _popcls="_deleteQnaReplyLayer" class="btn_pop_close" title="레이어팝업 닫힘"><i class="sp_icon ico_pop_close">레이어팝업닫기</i></a>
 	</div>
 </div>
 <!-- //layer popup -->
