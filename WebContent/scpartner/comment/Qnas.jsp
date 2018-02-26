@@ -41,38 +41,26 @@
 
 </head>
 <body>
-	<!-- u_skip -->
-	<ul id="u_skip">
-		<li><a href="#contents">컨텐츠 바로가기</a></li>
-		<li><a href="#all_menu">주메뉴 바로가기</a></li>
-	</ul>
-	<!-- //u_skip -->
-	<!-- wrap -->
-	<div class="wrap">
-
-
-<header class="header">
-	<div class="page_title">
-		<h2></h2>
-	</div>
-	<a href="javascript:void(0);" class="nav_prev"> <span
-		class="sp_icon ico_prev">이전</span></a>
-	
+<!-- u_skip -->
+<ul id="u_skip">
+	<li><a href="#contents">컨텐츠 바로가기</a></li>
+	<li><a href="#all_menu">주메뉴 바로가기</a></li>
+</ul>
+<!-- //u_skip -->
+<!-- wrap -->
+<div class="wrap">
+	<header class="header">
+		<div class="page_title"><h2>Q&amp;A 관리</h2></div>
+		<a href="javascript:void(0);" class="nav_prev">
+			<span class="sp_icon ico_prev">이전</span>
+		</a>
+		
 <a href="javascript:void(0);" class="nav_menu">
     <span class="sp_icon ico_menu">확장영역 열기</span>
     <i class="sp_icon ico_new" style="display:none;">NEW</i>
 </a>
-</header>
-
-
-
+	</header>
 	
-		
-	
-	
-
-
-
 
 
 
@@ -196,172 +184,141 @@
     <a href="javascript:void(0);" class="btn_fixed_guest">스페이스클라우드로 이동<i class="sp_icon ico_go"></i></a>
 </aside>
 	<!-- contents -->
-        <form name="modifyHome" id="modifyHome">
-	    <input type="hidden" name="spaceId" value="12228"/>
-		<section id="contents" class="contents contents_register contents_register_menu" role="main">
-			<div class="box_form public_option">
-				<div class="tit">
-					<label for="btn_public">공개설정</label>
-					<div class="option">
-						<div class="box_switch">
-							<input type="checkbox" class="_spcExpsYn _workspace" _rgstStatCd='cmpl' _inspStatCd="NEO" _hostMbrId="dkelrk1" _spaceId="12228" id="btn_public" >
-							<label for="btn_public" class="btn_switch">
-								<span class="left">공개</span>
-								<span class="right">비공개</span>
-							</label>
+	<section id="contents" class="contents review" role="main">
+		<div class="reservation_list">
+			<div class="review_tab">
+				<ul class="tab_search divide2">
+					<li><a href="Review.jsp">이용후기</a></li>
+					<li class="active"><a href="javascript:void(0);">Q&amp;A</a></li>
+				</ul>
+			</div>
+			
+			<div class="filter_area">
+					<div class="inner_width">
+						<!-- [D] label 클릭 시 sorting_filter에 on클래스를 추가해주세요. (아이콘)-->
+						<div class="sorting_filter">
+							<!-- [D] 선택된 option의 텍스트를 label에 넣어주세요 -->
+							<label for="sorting">전체상태</label>
+							<select name="replyYN" id="sorting" data-ui-param-link="qnaList" data-ui-sync-label>
+								<option value="all" selected>전체상태</option>
+								<option value="y" >답글있음</option>
+								<option value="n" >답글없음</option>
+							</select>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="register_menu space_name">
-				<strong class="title">공간 이름</strong>
-				
-				<strong class="desc">수련의 공간</strong>
-			</div>
-			<ul class="register_box">
-				<li class="register_menu">
+		</div>
+		<div class="flex_wrap column3 fluid product_list">
+		
+		
+		
+		
+			<article class="box_manage review_manage">
+				<div class="inner qna_inner">
+					<dl class="info">
+						<dt class="tit">티엔티</dt>
+						
+						
+						
+							
+						
+							
+							<dd class="text">반려동물을 못데려오는게 아쉬웠음.</dd>
+							
+						
+						
+						<dd class="footnote">
+							<strong>수련의 공간</strong>
+							<span>2018.02.23 12:08:05</span> 
+						</dd>
+					</dl>
 					
-					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/BasicInfo.jsp" class="menu_link completed"><!-- 원본 href : /wsmod/step2?h=dkelrk1&spaceId=12228 -->
-						<strong class="title">기본 정보</strong>
-						<p class="desc">공간에 대한 기본 정보를 입력하세요.</p>
+					
+					
+					
+					
+					
+					
 						
 						
-							<span class="blind">입력 완료</span>
-						
-					</a>
-				</li>
-				<li class="register_menu">
-					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/ContactInfo.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step3?h=dkelrk1&spaceId=12228 -->
-						<strong class="title">연락처 정보</strong>
-						<p class="desc">문의 및 알림을 받을 연락처를 입력하세요.</p>
-						
-							<span class="blind">입력 완료</span>
-						
-					</a>
-				</li>
-				<li class="register_menu">
-					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/Convinience.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step4?h=dkelrk1&spaceId=12228 -->
-						<strong class="title">이용 안내</strong>
-						<p class="desc">운영시간 및 주의사항을 입력하세요.</p>
-						
-							<span class="blind">입력 완료</span>
-						
-					</a>
-				</li>
-				<li class="register_menu">
-					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/Fee.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step5?h=dkelrk1&spaceId=12228 -->
-						<strong class="title">편의 시설</strong>
-						<p class="desc">제공할 수 있는 편의시설과 서비스를 입력하세요.</p>
-						
-							<span class="blind">입력 완료</span>
-						
-					</a>
-				</li>
-				<li class="register_menu">
-					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/ServiceTime.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step6?h=dkelrk1&spaceId=12228 -->
-						<strong class="title">가격 정보</strong>
-						<p class="desc">가격 정책과 환불 기준을 입력하세요.</p>
-						
-							<span class="blind">입력 완료</span>
-						
-					</a>
-				</li>
-				<li class="register_menu">
-					<a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/Transaction.jsp" class="menu_link completed"> <!-- 원본 href : /wsmod/step7?h=dkelrk1&spaceId=12228 -->
-						<strong class="title">정산 정보</strong>
-						<p class="desc">사업자정보와 계좌정보를 입력하세요.</p>
-						
-							<span class="blind">입력 완료</span>
-						
-					</a>
-				</li>
-			</ul>
-		</section>
-		</form>
-		<!-- [D] 미리보기 또는 검수신청을 할 수 없는 상태 -->
-		<div class="fixed_bar full_fixed">
-			<span class="btn_wrap"><a href="/FrontEnd_SC/scpartner/manageinfo/detail/finerdetails/Preview.jsp" class="fix_btn_prev disabled">미리보기</a></span>
-			<span class="btn_wrap"><a href="javascript:void(0);" class="fix_btn_next inspection disabled">검수신청</a></span>
+					<div class="comment" id="_printarea_qna_441">
+						<div class="heading">
+							<h3><label for="reply_441">호스트님의 답글</label></h3>
+						</div>
+						<div class="box_form">
+							<p class="comment_text">
+								그건 아직 불법이여서 안됨.
+							</p>
+						</div>
+						<div class="btn_area">
+							<a href="javascript:void(0)" class="btn btn_del _toggleQnaDeletePopup" data-cment-id="299" data-qna-id="441">삭제</a>
+							<a href="javascript:void(0)" class="btn btn_add _toggleQnaModifyArea" data-qna-id="441">수정</a>
+						</div>
+					</div>
+					
+					
+					<div class="comment" id="_modifyarea_qna_441" style="display:none;"> 
+						<div class="heading">
+							<h3><label for="reply_441">호스트님의 답글</label></h3>
+							<span class="option">
+								<span class="txt_count">
+									<em id="reply_cnt_441">0</em>자/<em>200</em>자
+									<span>(최소 15자)</span>
+								</span>
+							</span>
+						</div>
+						<div class="box_form">
+							<div class="input">
+								
+								<textarea name="" id="reply_441" minlength="15" maxlength="200" data-ui-sync-length="#reply_cnt_441" placeholder="게스트님의 질문에 답글을 작성해주세요.">그건 아직 불법이여서 안됨.</textarea>
+							</div>
+						</div>
+						<div class="btn_area">
+							<a href="javascript:void(0)" class="btn btn_add one_type _replyQna" data-cment-id="299" data-qna-id="441">수정</a>
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+			</article>
+		
+		
+			
 		</div>
+	</section>
+</div>
+<!-- layer popup  : top: 50%적용위해 margin-top직접입력함 -->
+<div class="layer_popup _popup1" id="_deleteQnaReplyLayer" style="display:none;" data-qna-id data-cment-id>
+	<div class="popup_wrap">
+		<div class="pop_header">Q&amp;A 답변 삭제</div>
+		<div class="pop_container">
+			<p class="pop_txt">답변 삭제시 복구<br>또는 재등록이 불가합니다.</p>
+			<div class="btns">
+				<a href="javascript:void(0)" class="btn btn_full btn_negative" _popcls="_deleteQnaReplyLayer">취소</a>
+				<a href="javascript:void(0)" class="btn btn_full btn_default" id="_deleteQnaReply">삭제</a>
+			</div>
+		</div>
+		<a href="javascript:void(0)" _popcls="_deleteQnaReplyLayer" class="btn_pop_close" title="레이어팝업 닫힘"><i class="sp_icon ico_pop_close">레이어팝업닫기</i></a>
 	</div>
-	<!-- //wrap -->
-
-<!-- layer popup  -->
-
-		<!-- [D] layerpopup 검수신청 확인  -->
-		<div class="layer_popup workspace mid_type" id="inspectionRequest" style="display:none;">
-			<div class="popup_wrap">
-				<div class="pop_header">
-					검수 신청
-				</div>
-				<div class="pop_container">
-					<p class="pop_guide_txt small">
-						검수가 통과되면, <br>공간이 즉시 공개되어 사이트에 노출됩니다.<br>
-						<strong class="accent request">공간 정보를 다시 한번 확인해주세요.</strong>
-					</p>
-					<div class="btns">
-						<a href="javascript:void(0);" class="btn btn_full btn_negative" _popCls="inspectionRequest">수정하기</a>
-						<a href="javascript:void(0);" class="btn btn_full btn_default" _popCls="inspectionRequest" id="inspectionRequestEnter">검수신청하기</a>
-					</div>
-				</div>
-				<a href="javascript:void(0);" class="btn_pop_close" title="레이어팝업 닫힘" _popCls='inspectionRequest'><i class="sp_icon ico_pop_close">레이어팝업닫기</i></a>
-			</div>
-		</div>
-		<!-- // [D] layerpopup 검수신청 확인 -->
-
-		<!-- [D] layerpopup 검수반려 안내 -->
-		<div class="layer_popup workspace inspection_type mid_type" id="inspectionRejectInfo" style="display:none;">
-			<div class="popup_wrap">
-				<div class="pop_header">
-					검수 반려
-				</div>
-				<div class="pop_container">
-					<p class="pop_tit border">
-						아래와 같은 사유로 <br>검수가 반려 되었습니다.
-					</p>
-					<p class="pop_desc">
-						<span class="subtitle">
-							반려 사유 :
-						</span>
-                        <span class="desc"></span>
-					</p>
-					<div class="btns">
-						<a href="https://talk.naver.com/ct/wc89we" target="_blank" class="btn btn_full btn_negative">문의하기</a>
-						<a href="javascript:void(0);" class="btn btn_full btn_default" _popCls='inspectionRejectInfo' id='inspectionRejectInfoEnter'>재검수 신청</a>
-					</div>
-				</div>
-				<a href="javascript:void(0);" class="btn_pop_close" title="레이어팝업 닫힘" _popCls='inspectionRejectInfo'><i class="sp_icon ico_pop_close">레이어팝업닫기</i></a>
-			</div>
-		</div>
-		<!-- // [D] layerpopup 검수반려 안내 -->
-
+</div>
 <!-- //layer popup -->
-	<div class="p_notification"></div>
-	<div class="dimmed"></div>
-    <input type="hidden" id="_dirty_" value/>
+<!-- //wrap -->
+<div class="p_notification"></div>
+<div class="dimmed"></div>
 </body>
+
 <script src="https://ssl.pstatic.net/spacecloud/static/center/js/deploy/20180129075647/min/jquery_core_min.js" type="text/javascript"></script>
 <!--[if lt IE 10]>
 <script src="https://ssl.pstatic.net/spacecloud/static/center/js/deploy/20180129075647/min/jquery_core_ie10_min.js" type="text/javascript"></script>
 <![endif]-->
-<script src="https://ssl.pstatic.net/spacecloud/static/center/js/deploy/20180129075647/min/jquery_upload_min.js" type="text/javascript"></script>
-<script src="https://ssl.pstatic.net/spacecloud/static/center/js/deploy/20180129075647/min/wsrgst_page_min.js" type="text/javascript"></script>
-<script src="https://ssl.pstatic.net/spacecloud/static/center/js/deploy/20180129075647/min/space_manage_page_min.js" type="text/javascript"></script>
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/maps3.js?_v20151103"></script>
-<script src="https://ssl.pstatic.net/spacecloud/static/center/js/deploy/20180129075647/min/search_address_map_min.js" type="text/javascript"></script>
+<script src="https://ssl.pstatic.net/spacecloud/static/center/js/deploy/20180129075647/min/reply_min.js" type="text/javascript"></script>
+
 
 <script type="text/javascript">
 var imageDomain = 'https://scloud.pstatic.net';
-var jsonPageData = {
-	userTpCd : '',			// host / LCR / LCM
-	hostId : 'dkelrk1',	// host Id managed by LC
-	maxPossbleStep : '',	// step2~cmpl
-	spaceId : '12228', 
-	productId : '', 
-	currentStep : 'cmpl',	// step1~cmpl
-	rgstTpCd : 'wsmod'	// rgst / mod
-	
-	
-};
 </script>
 </html>
